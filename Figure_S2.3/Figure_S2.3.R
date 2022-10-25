@@ -13,7 +13,7 @@ library("ggplot2")
 library("plyr")
 
 # Load data
-Output_data_4 <- read.csv("C:\\Users\\massth\\Desktop\\SMC\\Figure_final\\Data_figure_1C&_S2.2_&_S2.3.csv", header = T)
+Output_data_4 <- read.csv("C:\\Users\\massth\\Desktop\\SMC\\Figure_final\\Data_figure_1B&_S2.2_&_S2.3.csv", header = T)
 
 
 # Plot

@@ -12,7 +12,7 @@ library("ggplot2")
 library("plyr")
 
 # Plot
-Output_data_4 <- read.csv("/scicore/home/penny/masthi00/smc_resistance/Visualise/Figure/Data_figure_1C&_S2.2_&_S2.3.csv", header = T)
+Output_data_4 <- read.csv("/scicore/home/penny/masthi00/smc_resistance/Visualise/Figure/Data_figure_1B&_S2.2_&_S2.3.csv", header = T)
 
 # Define the number of survey per year
 Number_survey_years <- 365 / 5

@@ -8,7 +8,7 @@
 ################################################################################
 
 # Load the data
-Output_data_4 <-read.csv("C:/Users/massth/Desktop/SMC/Figure_final/Data_figure_1C&_S2.2_&_S2.3.csv", header = T)
+Output_data_4 <-read.csv("C:/Users/massth/Desktop/SMC/Figure_final/Data_figure_1B&_S2.2_&_S2.3.csv", header = T)
 
 # Load package
 library("rlang")
@@ -47,15 +47,13 @@ PLOT_C1 <- ggplot(Output_data_4) +
     size = 3 / ggplot2::.pt / constant)
 
 # Merge plot A, B and C together
-PLOT1 <- plot_grid(PLOT_A1, PLOT_B1, PLOT_C1, ncol = 3, nrow = 1, scale = 1, labels = c("A", "B", "C"), label_size = 18 / constant, label_fontface = 2)
 PLOT1 <- plot_grid(PLOT_A1, PLOT_C1, ncol = 2, nrow = 1, scale = 1, labels = c("A", "B"), label_size = 18 / constant, label_fontface = 2)
 
 # Save Figure 1
 ggsave("C:/Users/massth/Desktop/SMC/Figure_final/potential new/Figure_1.pdf", plot = PLOT1, width = 10, height = 5, device = "pdf", units = "cm", dpi = 300)
-#ggsave("C:/Users/massth/Desktop/SMC/Figure_final/Figure_1.pdf", plot = PLOT1, width = 15, height = 5, device = "pdf", units = "cm", dpi = 300)
 
 ggsave("C:/Users/massth/Desktop/SMC/Figure_final/potential new/Figure_1A.pdf", plot = PLOT_A1, width = 5, height = 5, device = "pdf", units = "cm", dpi = 300)
-ggsave("C:/Users/massth/Desktop/SMC/Figure_final/potential new/Figure_1C.pdf", plot = PLOT_C1, width = 5, height = 5, device = "pdf", units = "cm", dpi = 300)
+ggsave("C:/Users/massth/Desktop/SMC/Figure_final/potential new/Figure_1B.pdf", plot = PLOT_C1, width = 5, height = 5, device = "pdf", units = "cm", dpi = 300)
 
 
 
