@@ -13,7 +13,7 @@ library("ggplot2")
 library("plyr")
 
 # Load data
-DATA <- read.csv("/scicore/home/penny/masthi00/smc_resistance/Visualise/Figure/Data_figure_S1.6.csv", header = T)
+DATA <- read.csv("C:/Users/massth/Desktop/SMC/CODE_WF_PLOT/SP_resistance_data_and_visualisation/Figure_S1.6/Data_figure_S1.6.csv", header = T)
 
 # Plot
 constant <- 2.5
@@ -43,4 +43,4 @@ PLOT <- ggplot(data = DATA) +
     theme(legend.key.size = unit(0.9 / constant, "cm"))
 
 # Save
-ggsave("/scicore/home/penny/masthi00/smc_resistance/Visualise/Figure/Figure_S1.6.pdf", plot = PLOT, width = 18, height = 22, device = "pdf", units = "cm", dpi = 300)
+ggsave("C:/Users/massth/Desktop/SMC/CODE_WF_PLOT/SP_resistance_data_and_visualisation/Figure_S1.6/Figure_S1.6.pdf", plot = PLOT, width = 10, height = 6, device = "pdf", units = "cm", dpi = 300)

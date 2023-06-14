@@ -13,6 +13,7 @@ library("rlang")
 library("ggh4x")
 library("ggplot2")
 library("plyr")
+library("cowplot")
 
 # Load the data
 Quantil_final_final <- read.csv("C:/Users/massth/Desktop/SMC/Figure_final/Data_figure_2_&_S2.6.csv",header = T)
